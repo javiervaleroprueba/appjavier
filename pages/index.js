@@ -9,7 +9,7 @@ const Rifa = ({ listados }) => {
   //console.log(listados);
 
   const puestosComponentes = listados.map((puesto) => (
-    <RifaPuesto key={puesto._id} numeroPuesto={puesto.numero} estado={puesto.estado} nombre={puesto.nombre} />
+    <RifaPuesto key={puesto._id} numeroPuesto={puesto.numero} estado={puesto.estado} nombre={puesto.nombre} pago={puesto.pago}/>
   ));
 
   return (
