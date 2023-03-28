@@ -1,0 +1,14 @@
+.P_rifa{
+    align-items: center;
+    text-align: center;
+    border: 1px;
+    border-radius: 5px;
+}
+
+.ocupado{
+    background-color: red;
+}
+
+.libre{
+    background-color: green;
+}

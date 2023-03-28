@@ -1,0 +1,25 @@
+{
+  "name": "appjaviervalero",
+  "version": "1.0.0",
+  "description": "portafolio de javier valero",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "dotenv": "^16.0.3",
+    "mongodb": "^5.1.0",
+    "mongoose": "^7.0.3",
+    "next": "^13.2.4",
+    "next-connect": "^0.13.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
