@@ -35,7 +35,7 @@ export default Rifa;
 export async function getServerSideProps() {
   try {
     await conectarBD();
-    const res = await Listado.find();
+    const res = await Listado.find().sort({numero: 1});
     const listados = res.map((doc) => {
       const listado = doc.toObject();
       listado._id = `${listado._id}`;
