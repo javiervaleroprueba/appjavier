@@ -16,14 +16,12 @@ const Rifa = ({ listados }) => {
     <Layout>
       <div className="container">
         <div className="col-12">
-          <h3>
-            Rifa prodaños del carro Javier Valero Rojas, se puede consignar a
-            nequi numero: 311123125251{" "}
-            <span className="text-danger">valor rifa: 10.000.00</span>
+          <h3 className="text-justify">
+            Rifa pro "Accidente de Transito" Nequi: 3125858981 <span className="text-danger">Valor rifa: 15.000.00</span>
+            <span> Premio de $300.000.00</span> juega el 07/04/2023 con loteria Santander
           </h3>
         </div>
-        <div className="row row-cols-auto py-4 border border-success">
-         
+        <div className="row row-cols-auto py-4 border border-success justify-content-center">
           {puestosComponentes}
     
         </div>
