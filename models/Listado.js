@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const RifasSchema = new mongoose.Schema({
    numero: {
-      type: Number,
+      type: String,
       require: [true, "ingrese el nmero "]
      },
      estado: {
