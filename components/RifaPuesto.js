@@ -18,7 +18,7 @@ function RifaPuesto(props) {
         <div className="col-12">
           <h1 className="fs-1">{props.numeroPuesto}</h1>
         </div>
-        <div className="col-12 nombre">
+        <div className="col-12 nombre text-center">
           <p>
             {props.nombre} <br />
             {pagos}
