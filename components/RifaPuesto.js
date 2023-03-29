@@ -1,5 +1,14 @@
 
 function RifaPuesto(props) {
+  let pagos = "";
+ 
+  if (props.estado === "ocupado") {
+    if (props.pago === "si") {
+      pagos = "PAGO";
+    } else {
+      pagos = "DEBE";
+    }
+  }
 
   return (
     <div
@@ -10,7 +19,10 @@ function RifaPuesto(props) {
           <h1 className="fs-1">{props.numeroPuesto}</h1>
         </div>
         <div className="col-12 nombre">
-        <p>{props.nombre}</p>
+          <p>
+            {props.nombre} <br />
+            {pagos}
+          </p>
         </div>
       </div>
     </div>
