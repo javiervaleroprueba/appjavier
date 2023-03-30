@@ -122,7 +122,7 @@ const FormEscoger = ({formData, forNewEscoger = true}) => {
         </div>
         <div className="d-grid gap-2 ">
           <button className="btn btn-primary" type="submit">
-            {forNewEscoger ? "Apartar Número": "Editar Número"}
+            {forNewEscoger ? "Apartar Número": "Comprar"}
           </button>
           <Link href={"/"}>
             <button className="btn btn-secondary col-12" type="button">

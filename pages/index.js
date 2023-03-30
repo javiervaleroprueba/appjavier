@@ -26,7 +26,7 @@ const Rifa = ({ listados }) => {
           <h3 className="text-justify">
             Rifa pro "Accidente de Transito" Nequi: 3125858981{" "}
             <span className="text-danger">Valor rifa: 15.000.00</span>
-            <span> Premio de $300.000.00</span> juega el 07/04/2023 con loteria
+            <span> Premio de $300.000.00</span> juega el 14/04/2023 con loteria
             Santander
           </h3>
         </div>
