@@ -44,6 +44,7 @@ const EditPuesto = () => {
     estado: "escogido",
     pago: "no",
     celular: "",
+    chePago: "Debe"
   };
 
   return (

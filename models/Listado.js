@@ -16,7 +16,10 @@ const RifasSchema = new mongoose.Schema({
     },
     celular: {
       type: String,
-    }
+    },
+    chePago: {
+      type: String,
+    },
 })
 
 export default mongoose.models.Listado || mongoose.model('Listado', RifasSchema);
