@@ -12,6 +12,9 @@
 .libre{
     background-color: green;
 }
+.escogido{
+    background-color: rgb(194, 197, 38);
+}
 
 .si{
     background-color: rgb(95, 95, 93);
