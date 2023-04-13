@@ -14,6 +14,7 @@ const Narbar = () => {
     if (response.ok) {
       // Si la respuesta es exitosa, redireccionar al usuario a la página de inicio de sesión
       alert("usuario desactivado");
+      document.cookie = "myRifaToken=; max-age=0";
       router.push("/");
     } else {
       // Si la respuesta no es exitosa, mostrar un mensaje de error

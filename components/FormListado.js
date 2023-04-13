@@ -36,7 +36,7 @@ const FormListado = ({ formData, forNewEscoger = true }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    putData()
+    putData();
   };
 
   const putData = async () => {
@@ -76,7 +76,6 @@ const FormListado = ({ formData, forNewEscoger = true }) => {
               name="nombre"
               value={form.nombre}
               onChange={handleChange}
-            
               autoComplete="off"
             />
           </div>
@@ -90,9 +89,7 @@ const FormListado = ({ formData, forNewEscoger = true }) => {
               name="celular"
               value={form.celular}
               onChange={handleChange}
-       
               autoComplete="off"
-            
             />
           </div>
 
@@ -112,7 +109,7 @@ const FormListado = ({ formData, forNewEscoger = true }) => {
               <option value="si">SI</option>
             </select>
           </div>
-        
+
           <div className="mt-2">
             <label htmlFor="Estado" className="form-label">
               Estado:
@@ -130,8 +127,6 @@ const FormListado = ({ formData, forNewEscoger = true }) => {
               <option value="libre">Libre</option>
             </select>
           </div>
-
-
         </div>
         <div className="d-grid gap-2 ">
           <button className="btn btn-primary" type="submit">

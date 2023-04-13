@@ -4,6 +4,7 @@ import RifaPuesto from "../components/RifaPuesto";
 import Layout from "../components/Layout";
 import Listado from "../models/Listado";
 import conectarBD from "../lib/dbConnect";
+import Link from "next/link";
 
 const Rifa = ({ listados }) => {
   //console.log(listados);
@@ -29,6 +30,24 @@ const Rifa = ({ listados }) => {
             <span> Premio de $300.000.00</span> juega el 14/04/2023 con loteria
             Santander
           </h3>
+
+          <div className="row ">
+            <div className="col-2 fs-3 text-center text-content-center">
+              Subconsultas:{" "}
+            </div>
+            <div className="col">
+              <Link href={"/editar/editar"}>
+                <button
+                  type="button"
+                  className="btn btn-outline-primary btn-lg "
+                >
+                  Editar
+                </button>
+              </Link>
+            </div>
+          </div>
+
+          <hr />
         </div>
         <div className="row row-cols-auto py-4 border border-success justify-content-center">
           {puestosComponentes}
