@@ -32,10 +32,10 @@ const Rifa = ({ listados }) => {
           </h3>
 
           <div className="row ">
-            <div className="col-2 fs-3 text-center text-content-center">
+            <div className="col-6 col-md-2 fs-3 text-center text-content-center">
               Subconsultas:{" "}
             </div>
-            <div className="col">
+            <div className="col-2">
               <Link href={"/editar/editar"}>
                 <button
                   type="button"

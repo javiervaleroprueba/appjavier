@@ -5,7 +5,6 @@ import Link from "next/link";
 import Layout from "../../components/Layout";
 
 function Editar() {
-
   const [listado, setListado] = useState([]);
 
   const getResidentes = async () => {
@@ -23,70 +22,70 @@ function Editar() {
   }, [1]);
 
   return (
-    <>
-      <Layout>
-      <div>
-      <h1 className="text-center">LISTADO NUMEROS DE LA RIFA</h1>
-      <div className="row ">
-        <div className="col-2 fs-3 text-center text-content-center">
-          Subconsultas:{" "}
-        </div>
-        <div className="col">
-          <Link href={"/"}>
-            <button type="button" className="btn btn-outline-secondary btn-lg">
-              Regresar
-            </button>
-          </Link>
-        </div>
-        </div>
-       
-      <hr />
-      <div className="container">
-        <table className="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">NUMERO</th>
-              <th scope="col">NOMBRE</th>
-              <th scope="col">CELULAR </th>
-              <th scope="col">PAGO</th>
-              <th scope="col">ESTADO</th>
-            </tr>
-          </thead>
+    <Layout>
+      <div className="container-fluid">
+        <div className="col-12 ">
+          <h1 className="text-center">LISTADO NUMEROS DE LA RIFA</h1>
+          <div className="row ">
+            <div className="col-6 col-md-2 fs-3 text-center text-content-center">
+              Subconsultas:{" "}
+            </div>
+            <div className="col-6 col-md-1">
+              <Link href={"/"}>
+                <button
+                  type="button"
+                  className="btn btn-outline-secondary btn-lg"
+                >
+                  Regresar
+                </button>
+              </Link>
+            </div>
+          </div>
 
-          <tbody>
-            {listado.map((listado, index) => (
-              <tr key={listado._id}>
-                <td scope="row">{index + 1}</td>
-                <td scope="row">{listado.numero}</td>
-                <td className="">{listado.nombre}</td>
-                <td>{listado.celular}</td>
-                <td>{listado.pago}</td>
-                <td>{listado.estado}</td>
-                <td>
-                  <Link href={`/editar/${listado._id}`}>
-                    <button
-                      type="button"
-                      className="btn btn-outline-primary btn-lg"
-                    >
-                      Editar
-                    </button>
-                  </Link>
-                </td>
+          <hr />
+          <div>
+            <table className="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">NUMERO</th>
+                  <th scope="col">NOMBRE</th>
+                  <th scope="col">CELULAR </th>
+                  <th scope="col">PAGO</th>
+                  <th scope="col">ESTADO</th>
+                </tr>
+              </thead>
 
-                <td>
-                 
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+              <tbody>
+                {listado.map((listado, index) => (
+                  <tr key={listado._id}>
+                    <td scope="row">{index + 1}</td>
+                    <td scope="row">{listado.numero}</td>
+                    <td className="">{listado.nombre}</td>
+                    <td>{listado.celular}</td>
+                    <td>{listado.pago}</td>
+                    <td>{listado.estado}</td>
+                    <td>
+                      <Link href={`/editar/${listado._id}`}>
+                        <button
+                          type="button"
+                          className="btn btn-outline-primary btn-lg"
+                        >
+                          Editar
+                        </button>
+                      </Link>
+                    </td>
+
+                    <td></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-    </div>
-      </Layout>
-    </>
+    </Layout>
   );
 }
 
 export default Editar;
-

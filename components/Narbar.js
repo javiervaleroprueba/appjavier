@@ -11,7 +11,7 @@ const Narbar = () => {
     // Hacer una solicitud a la API de logout
     const response = await fetch("/api/auth/logout");
     //console.log(response.ok)
-    const salir = response.ok
+    const salir = response.ok;
     if (salir === true) {
       // Si la respuesta es exitosa, redireccionar al usuario a la página de inicio de sesión
       alert("usuario desactivado");
@@ -20,12 +20,12 @@ const Narbar = () => {
     } else {
       // Si la respuesta no es exitosa, mostrar un mensaje de error
       console.error("Error al cerrar sesión");
-      alert("Se esta finalizada la sección")
+      alert("Se esta finalizada la sección");
     }
   };
 
   return (
-    <>
+    <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <Link href="/" legacyBehavior>
@@ -74,7 +74,7 @@ const Narbar = () => {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 
