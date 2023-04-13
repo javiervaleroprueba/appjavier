@@ -6,12 +6,13 @@ const Narbar = () => {
 
   const isLoggedIn =
     typeof document !== "undefined" && document.cookie.includes("myRifaToken");
-  console.log("esta login ", isLoggedIn);
 
   const handleLogoutClick = async () => {
     // Hacer una solicitud a la API de logout
     const response = await fetch("/api/auth/logout");
-    if (response.ok) {
+    //console.log(response.ok)
+    const salir = response.ok
+    if (salir === true) {
       // Si la respuesta es exitosa, redireccionar al usuario a la página de inicio de sesión
       alert("usuario desactivado");
       document.cookie = "myRifaToken=; max-age=0";
@@ -19,6 +20,7 @@ const Narbar = () => {
     } else {
       // Si la respuesta no es exitosa, mostrar un mensaje de error
       console.error("Error al cerrar sesión");
+      alert("Se esta finalizada la sección")
     }
   };
 

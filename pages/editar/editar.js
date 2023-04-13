@@ -33,8 +33,8 @@ function Editar() {
         </div>
         <div className="col">
           <Link href={"/"}>
-            <button type="button" className="btn btn-outline-success btn-lg disabled">
-              Agregar
+            <button type="button" className="btn btn-outline-secondary btn-lg">
+              Regresar
             </button>
           </Link>
         </div>
