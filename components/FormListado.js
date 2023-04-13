@@ -76,7 +76,7 @@ const FormListado = ({ formData, forNewEscoger = true }) => {
               name="nombre"
               value={form.nombre}
               onChange={handleChange}
-              required
+            
               autoComplete="off"
             />
           </div>
@@ -90,7 +90,7 @@ const FormListado = ({ formData, forNewEscoger = true }) => {
               name="celular"
               value={form.celular}
               onChange={handleChange}
-              required
+       
               autoComplete="off"
             
             />
